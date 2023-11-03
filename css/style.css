@@ -1,0 +1,990 @@
+html {
+    overflow-x: hidden;
+    -webkit-locale: "ru";
+    display: block;
+    color: text;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    outline: 0;
+    }
+
+    *, *:before, *:after {
+        box-sizing: border-box;
+    }
+
+    *:after {
+        box-sizing: border-box;
+    }
+
+    head, link, meta, script, style, title {
+        display: none;
+    }
+
+    *, *:before, *:after {
+        box-sizing: border-box;
+    }
+
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+        font: inherit;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: fixed;
+        background-image: linear-gradient(134deg,#3023ae 0,#c86dd7 100%);
+        width: 100%;
+        height: 100%;
+        z-index: 995;
+        padding: 30px;
+    }
+
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+        margin: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline;
+        outline: 0;
+    }
+
+    body {
+        color: #000;
+        -webkit-font-smoothing: antialiased;
+        }
+
+        .mobile-menu .close {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .mobile-menu .close span:nth-child(1) {
+            transform: rotate(45deg);
+        }
+
+        .mobile-menu .close span {
+            background: #FFF;
+            width: 30px;
+            height: 3px;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 13px;
+        }
+
+        .mobile-menu .close span:nth-child(2) {
+            transform: rotate(-45deg);
+        }
+
+        .mobile-menu .logo {
+            position: absolute;
+            left: 30px;
+            top: 30px;
+        }
+
+        .lazyload img {
+            border: 0;
+            max-width: 100%;
+            vertical-align: top;
+        }
+
+        img {
+            border-style: none;
+        }
+
+        a:any-link {
+            color: -webkit-link;
+            cursor: auto;
+        }
+
+        .mobile-menu .menu {
+            text-align: center;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            margin-top: -10px;
+        }
+
+        .mobile-menu .menu ul li {
+            margin: 0 0 40px;
+        }
+
+        li {
+            display: list-item;
+            text-align: match-parent;
+
+        ::marker {
+            unicode-bidi: isolate;
+            font-variant-numeric: tabular-nums;
+            white-space: pre;
+            text-transform: none;
+            }
+        }
+
+            ul {
+                list-style: none;
+            }
+
+            .mobile-menu .menu ul li a {
+                color: #FFF;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            a {
+                text-decoration: none;
+                transition: opacity .3s ease-out;
+                background-color: transparent;
+            }
+
+            .mobile-menu .callback {
+                width: calc(100% - 60px);
+                position: absolute;
+                left: 30px;
+                bottom: 30px;
+                text-align: center;
+            }
+
+            .btn {
+                display: inline-block;
+                vertical-align: top;
+                }
+
+                .btn a {
+                    background: #302594;
+                    display: block;
+                    color: #FFF;
+                    text-align: center;
+                    height: 60px;
+                    line-height: 60px;
+                    padding: 0 46px;
+                    box-shadow: 0 22px 22px 0 rgba(0,0,0,0.15);
+                    border-radius: 4px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    letter-spacing: 0;
+                    font-size: 16px;
+                    }
+
+                    header {
+                        background-image: linear-gradient(134deg,#3023ae 0,#c86dd7 100%);
+                        overflow-x: hidden;
+                    }
+
+                    header.fix {
+                        padding-top: 90px;
+                    }
+
+                    header .top-line {
+                        animation-delay: 2s;
+animation-name: fade-in;
+z-index: 990;
+
+padding: 15px 0;
+transition: top .2s linear;
+                    }
+
+                    header .top-line.active {
+                        top: 0;
+                        visibility: visible !important;
+                    }
+
+                    header.fix .top-line {
+                        position: fixed;
+                        left: 0;
+                        width: 100%;
+                        background-image: linear-gradient(134deg,#3023ae 0,#c86dd7 100%);
+                        }
+
+                        .fade-in {
+                            animation: fade-in 1.2s;
+                            animation-timing-function: ease-in-out;
+                        }
+
+                        header.fix .top-line .logo { 
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+
+                        header .top-line .logo {
+                            position: absolute;
+                            left: 30px;
+                            z-index: 33;
+                        }
+
+                        img ls-is-cached {
+                            border: 0;
+                            max-width: 100%;
+                            vertical-align: top;
+                        }
+
+                        .container {
+                            @media (min-width: 1200px) {
+                                width: 1170px;
+                        }
+                    }
+
+                    .container {
+                        @media (min-width: 992px) {
+                            width: 970px;
+                            }    
+                    }
+
+                    .container {
+                        @media (min-width: 768px) {
+                            width: 970px;
+                            }    
+                    }
+
+                    .container::before {
+                        content: " ";
+display: table;
+                    }
+
+                    .container {
+                        margin-right: auto;
+                        margin-left: auto;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+
+                    .clearfix:after, .container:after, .container-fluid:after, .row:after {
+                        clear: both;
+                    }
+
+                    .clearfix:before, .clearfix:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after {
+                        content: " ";
+                        display: table;
+                    }
+
+                    .row {
+                        margin-left: -15px;
+                        margin-right: -15px;
+                    }
+
+                    .col-lg-9 {
+                        @media (min-width: 1200px) {
+                            width: 75%;
+                            float: left;
+                        }
+                    }
+
+                    .col-md-10 {
+                        @media (min-width: 992px) {
+                            width: 75%;
+                        }
+                    }
+
+                    .col-lg-9 .col-md-10 {
+                        position: relative;
+min-height: 1px;
+padding-left: 15px;
+padding-right: 15px;
+                    }
+
+                    header .top-line .menu {
+                        @media (max-width: 1550px) {
+                            text-align: right;
+                        }
+                    }
+                    
+                    header .top-line .menu {
+                        margin: 22px 0;
+                        transition: .3s text-align;
+                    }
+
+                    header .top-line .menu ul li {
+                        float: left;
+                        margin-right: 34px;
+                        }
+
+                        header .top-line .menu ul li a {
+                            color: #FFF;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            font-size: 16px;
+                            line-height: 1;
+                            }
+
+                            header .top-line .menu ul li:last-child {
+                                margin: 0;
+                                }
+
+                                header .top-line .menu ul {
+                                    display: inline-block;
+                                    vertical-align: top;
+                                }
+
+                                ul, menu, dir {
+                                    margin-block-start: 1em;
+                                    margin-block-end: 1em;
+                                    margin-inline-start: 0px;
+                                    margin-inline-end: 0px;
+                                    padding-inline-start: 40px;
+                                }
+
+                                .col-lg-3 {
+                                    @media (min-width: 1200px) {
+                                        width: 25%;
+                                        float: left;
+                                    }
+                                }
+
+                                .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+                                    position: relative;
+                                    min-height: 1px;
+                                    padding-left: 15px;
+                                    padding-right: 15px;
+                                    }
+
+                                    header .top-line .mobile-toggle {
+                                        display: none;
+                                        width: 27px;
+                                        height: 19px;
+                                        position: absolute;
+                                        right: 15px;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                    }
+
+                                    header .top-line .mobile-toggle span {
+                                        display: block;
+                                        width: 100%;
+                                        height: 3px;
+                                        margin: 0 0 5px;
+                                        background: #FFF;
+                                        border-radius: 10px;
+                                        }
+
+                                        header .top-line .mobile-toggle span:nth-child(3) {
+                                            margin: 0;
+                                            }
+
+                                            header .top-line .callback {
+                                                text-align: right;
+                                                }
+
+                                                .btn a {
+                                                    background: #302594;
+                                                    display: block;
+                                                    color: #FFF;
+                                                    text-align: center;
+                                                    height: 60px;
+                                                    line-height: 60px;
+                                                    padding: 0 46px;
+                                                    box-shadow: 0 22px 22px 0 rgba(0,0,0,0.15);
+                                                    border-radius: 4px;
+                                                    text-transform: uppercase;
+                                                    font-weight: bold;
+                                                    letter-spacing: 0;
+                                                    font-size: 16px;
+                                                    }
+
+                                                    .row:after {
+                                                        clear: both;
+
+.row {
+margin-left: -15px;
+margin-right: -15px;
+}
+
+header .main-line {
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    }
+
+    header .main-line .container {
+        display: table;
+        height: calc(100vh - 90px);
+        padding: 30px 15px;
+        }
+
+        .main-line .container {
+            @media (min-width: 1200px) {
+                width: 1170px;
+            }
+        }
+        
+        .main-line .container {
+                margin-right: auto;
+                margin-left: auto;
+        }
+
+        header .main-line .main-line-block {
+            display: table-cell;
+            vertical-align: middle;
+            position: relative;
+            z-index: 5;
+            }
+
+            header .main-line .info {
+                color: #FFF;
+                float: left;
+            }
+
+            header .main-line .info .title {
+                font-weight: 900;
+                font-size: 55px;
+                line-height: 1.2;
+                margin: 0 0 15px;
+                }
+
+                slide-in-left {
+                    animation: slide-in-left 0.8s;
+                    animation-timing-function: ease;
+                }
+
+                header .main-line .info>.text {
+                    font-size: 25px;
+                    margin: 0 0 94px;
+                    }
+
+                    header .main-line .info .advatanges {
+                        display: flex;
+                        flex-wrap: wrap;
+                        max-width: 500px;
+                    }
+
+                    header .main-line .info .advatanges .item:nth-child(2) {
+                        margin-right: 0;
+                    }
+
+                    header .main-line .info .advatanges .item {
+                        width: 50%;
+                        position: relative;
+                        min-height: 36px;
+                        padding-left: 60px;
+                        margin: 0 0 50px;
+                        padding-right: 44px;
+                        }
+                        
+                        header .main-line .form {
+                            width: 508px;
+                            float: right;
+                            background: #FFF;
+                            margin: 11px 0 0;
+                            padding: 30px;
+                            border-radius: 10px;
+                            }
+
+                            header .main-line .form .title {
+                                font-size: 25px;
+                                font-weight: bold;
+                                line-height: 30px;
+                                margin: 0 0 20px;
+                                }
+
+                                header .main-line .form .form-group {
+                                    margin: 0 0 32px;
+                                    }
+
+                                    header .main-line .form .form-group.slider .form-title {
+                                        margin: 0;
+                                        }
+
+                                        header .main-line .form .form-group .form-title {
+                                            font-size: 13px;
+                                            text-transform: uppercase;
+                                            line-height: 1;
+                                        }
+
+                                        .irs--flat {
+                                            height: 40px;
+                                            }
+
+                                            .irs {
+                                                position: relative;
+                                                display: block;
+                                                
+                                                -webkit-user-select: none;
+                                                
+                                                
+                                                font-size: 12px;
+                                                font-family: Arial,sans-serif;
+                                                }
+
+                                                .irs--flat .irs-line {
+                                                    top: 25px;
+                                                    height: 12px;
+                                                    background-color: #BAF1FF;
+                                                    border-radius: 4px;
+                                                    }
+
+                                                    .irs-line {
+                                                        position: relative;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        outline: none !important;
+                                                        }
+
+                                                        .irs--flat .irs-min, .irs--flat .irs-max {
+                                                            top: 0;
+                                                            padding: 1px 3px;
+                                                            color: #999;
+                                                            font-size: 10px;
+                                                            line-height: 1.333;
+                                                            text-shadow: none;
+                                                            background-color: #e1e4e9;
+                                                            border-radius: 4px;
+                                                            }
+
+                                                            .irs-min {
+                                                                left: 0;
+                                                            }
+
+                                                            .irs-min, .irs-max {
+                                                                position: absolute;
+                                                                display: block;
+                                                                cursor: default
+                                                            }
+
+                                                            .irs--flat .irs-max {
+                                                                top: 0;
+                                                                padding: 1px 3px;
+                                                                color: #999;
+                                                                font-size: 10px;
+                                                                line-height: 1.333;
+                                                                text-shadow: none;
+                                                                background-color: #e1e4e9;
+                                                                border-radius: 4px;
+                                                                }
+
+                                                                .irs-max {
+                                                                    right: 0;
+                                                                }
+
+                                                                .irs-max {
+                                                                    position: absolute;
+                                                                    cursor: default;
+                                                                }
+
+                                                                .irs--flat .irs-from {
+                                                                    border-radius: 4px;
+color: #000;
+font-size: 20px;
+left: inherit !important;
+right: 0;
+top: -15px;
+line-height: 1;
+font-weight: bold;
+letter-spacing: -1px;
+padding: 0;
+                                                                                                                 }                                                 }
+
+                                                                .irs-from {
+                                                                    position: absolute;
+                                                                    display: block;
+                                                                    cursor: default;
+white-space: nowrap;
+                                                                }
+
+                                                             .irs--flat .irs-to {
+                                                                border-radius: 4px;
+color: #000;
+font-size: 20px;
+left: inherit !important;
+right: 0;
+top: -15px;
+line-height: 1;
+font-weight: bold;
+letter-spacing: -1px;
+padding: 0;
+                                                             }
+
+
+
+                    .irs-to {
+                        position: absolute;
+display: block;
+cursor: default;
+white-space: nowrap;
+                    }
+
+                    irs--flat .irs-single {
+                        font-size: 20px;
+                        left: inherit !important;
+                        right: 0;
+                        top: -15px;
+                        line-height: 1;
+                        font-weight: bold;
+                        letter-spacing: -1px;
+                        padding: 0;
+                        }
+
+                        .irs--flat .irs-single {
+                            border-radius: 4px;
+color: #000;
+                        }
+
+                        .irs-single {
+                            position: absolute;
+                            display: block;
+                            top: 0;
+                            left: 0;
+                            cursor: default;
+                            white-space: nowrap;
+                            }
+
+                            .irs--flat .irs-single:before {
+                                content: '2';
+                                position: absolute;
+                                right: 0;
+                                top: 0px;
+                                font-size: 12px;
+                                }
+
+                                .irs--flat .irs-single:after {
+                                    content: ' м';
+                                    font-size: 16px;
+                                    margin-right: 8px;
+                                }
+
+                                .irs {
+                                    position: relative;
+                                    display: block;
+                                    -webkit-user-select: none;
+                                    font-size: 12px;
+font-family: Arial,sans-serif;
+                                }
+
+                                .irs-grid {
+                                    position: absolute;
+                                    display: none;
+                                    bottom: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 20px;
+                                    } 
+
+
+                                    span .irs-bar .is-bar--single {
+                                        left: 0px;
+width: 45.677083%;
+                                    }
+
+                                    .irs--flat .irs-bar--single {
+                                        border-radius: 4px 0 0 4px;
+                                    }
+
+                                    .irs--flat .irs-bar {
+                                        top: 25px;
+                                        height: 12px;
+                                        background-image: linear-gradient(180deg, #AE60D0 0%, #C86DD7 100%);
+                                        }
+
+                                        .irs-bar {
+                                            position: absolute;
+                                            display: block;
+                                        }
+
+                                        .irs--flat .irs-shadow {
+                                            height: 1px;
+                                            bottom: 16px;
+                                            background-color: #e1e4e9;
+                                            }
+
+                                            irs-shadow {
+                                                position: absolute;
+                                                left: 0;
+width: 0;
+                                            }
+
+                                            irs--flat .irs-handle {
+                                                width: 33px;
+                                                height: 33px;
+                                                background: #302594;
+                                                border-radius: 100px;
+                                                top: 14px;
+                                                cursor: pointer;
+                                                }
+
+                                                .irs-handle {
+                                                    position: absolute;
+                                                    display: block;
+                                                    box-sizing: border-box;
+                                                    z-index: 1;
+                                                }
+
+                                                .irs--flat .irs-handle>i:first-child {
+                                                    position: absolute;
+                                                    top: 0;
+left: 50%;
+width: 2px;
+height: 100%;
+margin-left: -1px;
+background-color: #da4453;
+display: none;
+                                                }
+
+                                                irs--flat .irs-handle {
+                                                    cursor: pointer;
+                                                }
+
+                                                .irs-hidden-input {
+                                                    position: absolute !important;
+                                                    display: block !important;
+                                                    top: 0 !important;
+                                                    left: 0 !important;
+                                                    width: 0 !important;
+                                                    height: 0 !important;
+                                                    font-size: 0 !important;
+                                                    line-height: 0 !important;
+                                                    padding: 0 !important;
+                                                    margin: 0 !important;
+                                                    overflow: hidden;
+                                                    outline: none !important;
+                                                    z-index: -9999 !important;
+                                                    background: none !important;
+                                                    border-style: solid !important;
+                                                    border-color: transparent !important;
+                                                    }
+
+                                                    button, input, optgroup, select, textarea {
+                                                        font-family: inherit;
+                                                    }
+
+                                                    input {
+                                                        appearance: auto;
+                                                        color: text;
+                                                        border-top-width: 2px;
+border-right-width: 2px;
+border-bottom-width: 2px;
+border-left-width: 2px;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+-webkit-rtl-ordering: logical;
+-webkit-user-select: text;
+cursor: auto;
+                                                    }
+
+                                                    input, textarea, select, button {
+                                                        font-style: -webkit-small-control;
+                                                        font-weight: -webkit-small-control;
+                                                        font-variant-caps: -webkit-small-control;
+                                                        letter-spacing: normal;
+word-spacing: normal;
+text-transform: none;
+text-indent: 0px;
+text-shadow: none;
+text-align: start;
+                                                    }
+
+                                                    input, textarea, select, button, meter, progress {
+                                                        writing-mode: horizontal-tb;
+                                                    }
+
+                                                    header .main-line .form .form-group .form-title {
+                                                        font-size: 13px;
+                                                        text-transform: uppercase;
+                                                        margin: 0 0 23px;
+                                                        line-height: 1;
+                                                        }
+
+                                                        header .main-line .form .form-group .form-items {
+                                                            display: flex;
+-webkit-box-align: center;
+align-items: center;
+                                                        }
+
+                                                        header .main-line .form .form-group .form-items .item {
+                                                            width: 33%;
+                                                        }
+
+                                                        header .main-line .form .form-group .form-items .item input {
+                                                            display: none;
+                                                            }
+
+                                                            [type="checkbox"], [type="radio"] {
+                                                                box-sizing: border-box;
+                                                                padding: 0;
+                                                            }
+
+                                                            input {
+                                                                outline: 0;
+                                                            }
+
+                                                            button, input {
+                                                                overflow: visible;
+                                                            }
+
+                                                            button, input, optgroup, select, textarea {
+                                                                font-family: inherit;
+                                                                font-size: 100%;
+                                                                line-height: 1.15;
+                                                                margin: 0;
+                                                            }
+
+                                                            input:is([type="radio"], [type="checkbox"]) {
+                                                                background-color: initial;
+border-top-color: initial;
+border-top-style: initial;
+border-top-width: initial;
+border-right-color: initial;
+border-right-style: initial;
+border-right-width: initial;
+border-bottom-color: initial;
+border-bottom-style: initial;
+border-bottom-width: initial;
+border-left-color: initial;
+border-left-style: initial;
+border-left-width: initial;
+                                                            }
+
+                                                            header .main-line .form .form-group .form-items .item label {
+                                                                cursor: pointer;
+                                                                position: relative;
+                                                                padding-left: 40px;
+                                                                display: block;
+                                                                font-weight: 500;
+                                                                }
+
+                                                                header .main-line .form .form-group .form-items .item label span {
+                                                                    position: absolute;
+                                                                    left: 0;
+                                                                    top: 50%;
+                                                                    transform: translateY(-50%);
+width: 31px;
+height: 31px;
+background: url(../img/radio.svg) no-repeat center center;
+transition: 0.3s background;
+background-size: 31px 31px;
+                                                                }
+
+                                                                header .main-line .form .form-group .form-items .item {
+                                                                    width: 33%;
+                                                                }
+
+                                                                header .main-line .form .form-group .form-items .item input {
+                                                                    display: none;
+                                                                }
+
+                                                                [type="checkbox"], [type="radio"] {
+                                                                    box-sizing: border-box;
+                                                                    padding: 0;
+                                                                }
+
+                                                                header .main-line .form .form-group .form-items .item label {
+                                                                    cursor: pointer;
+                                                                    position: relative;
+                                                                    padding-left: 40px;
+                                                                    display: block;
+                                                                    font-weight: 500;
+                                                                    }
+
+                                                                    header .main-line .form .form-group .form-items .item label span {
+                                                                        position: absolute;
+                                                                        left: 0;
+                                                                        top: 50%;
+                                                                        transform: translateY(-50%);
+width: 31px;
+height: 31px;
+background: url(../img/radio.svg) no-repeat center center;
+transition: 0.3s background;
+background-size: 31px 31px;
+                                                                    }
+
+                                                                    header .main-line .form span.error {
+                                                                        padding-top: 20px;
+                                                                        display: none;
+                                                                        color: red;
+                                                                        }
+
+                                                                        header .main-line .form .form-group.button {
+                                                                            text-align: center;
+                                                                            }
+
+                                                                            header .main-line .form .form-group:last-child {
+                                                                                margin: 0;
+                                                                                }
+
+                                                                                .btn {
+                                                                                    display: inline-block;
+                                                                                    vertical-align: top;
+                                                                                    }
+
+                                                                                    .btn a {
+                                                                                        background: #302594;
+                                                                                        display: block;
+                                                                                        color: #fff;
+                                                                                        text-align: center;
+                                                                                        height: 60px;
+                                                                                        line-height: 60px;
+                                                                                        padding: 0 46px;
+                                                                                        box-shadow: 0 22px 22px 0 rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+text-transform: uppercase;
+font-weight: 700;
+letter-spacing: 0;
+font-size: 14px;
+
+                                                                                    }
+
+                                                                                    a:any-link {
+                                                                                        
+                                                                                        cursor: auto;
+                                                                                    }
+
+                                                                                    form {
+                                                                                        display: block;
+
+                                                                                    }
+
+                                                                                    .scroll-down {
+                                                                                        position: absolute;
+                                                                                        top: calc(100% - 85px);
+                                                                                        left: 0;
+                                                                                        margin-left: calc(50% - 30px);
+                                                                                        color: #fff;
+                                                                                        text-align: center;
+                                                                                        }
+
+                                                                                        .fade-in-up {
+                                                                                            animation-timing-function: ease-out;
+                                                                                            animation: fade-in-up 1s;
+                                                                                        }
+
+                                                                                        .scroll-down a {
+                                                                                            color: #fff;
+                                                                                            display: block;
+                                                                                            }
+
+                                                                                            header .main-line .bg-img {
+                                                                                                content: "";
+                                                                                                width: 745px;
+                                                                                                height: 894px;
+                                                                                                background: url(../img/header.jpg) no-repeat left top;
+                                                                                                position: absolute;
+                                                                                                left: 50%;
+                                                                                               
+                                                                                                border-radius: 150px 0 0 25px;
+                                                                                                background-size: cover;
+                                                                                                top: 50px;
+                                                                                                max-height: 100%;
+z-index: 2;
+                                                                                            }
+
+                                                                                            .slide-in-left {
+                                                                                                animation: slide-in-left .8s;
+                                                                                                animation-timing-function: ease;
+                                                                                            }
+
+
+
+
+                    
+
