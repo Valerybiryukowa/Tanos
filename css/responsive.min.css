@@ -342,16 +342,16 @@ clear: both;
     }
 
     header .top-line .mobile-toggle {
-        display:block
+        display:block;
     }
 
     header .top-line .logo {
         left: 50%;
-        margin-left:-360px
+        margin-left:-360px;
     }
 
     header .main-line .info {
-        width:100%
+        width:100%;
     }
 
     header .main-line .bg-img {

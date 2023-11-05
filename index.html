@@ -23,13 +23,15 @@
     <link rel="stylesheet" href="/css/normalize.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="/css/magnific-popup.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>&lt;link rel="stylesheet" href="/template/css/magnific-popup.css"&gt;</noscript>
-    <noscript>&lt;link rel="stylesheet" href="/template/css/slick.min.css"&gt;</noscript>
+    <noscript>&lt;link rel="stylesheet" href="/css/slick.min.css"&gt;</noscript>
     <link rel="stylesheet" href="css/slick.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="css/slick-theme.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>&lt;link rel="stylesheet" href="/template/css/slick-theme.min.css"&gt;</noscript>
-    <link rel="stylesheet" href="css/ion.rangeSlider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <link rel="stylesheet" href="/css/ion.rangeSlider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>&lt;link rel="stylesheet" href="/template/css/ion.rangeSlider.min.css"&gt;</noscript>
     <!--<link rel="stylesheet" type="text/css" href="/template/css/ion.rangeSlider.min.css"/>-->
+
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>&lt;link rel="stylesheet" href="/template/css/jquery.mCustomScrollbar.min.css"&gt;</noscript>
     <link rel="stylesheet" href="css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -41,7 +43,8 @@
     <script src="js/api-map.yandex.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/default.css" type="text/css">
     <meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="/js/ion.rangeSlider.min.js"></script>
+    <script defer src="/js/jquery.min.js"></script>
     
 </head>
 
@@ -57,7 +60,7 @@
                 <img class="lazyload" data-src="/img/logo.svg">
             </a>
         </div>
-        <nav class="menu">
+        <nav class="menu-mobile menu-mobile--opened">
 			<ul>
 			     <li>
                     <a href="#menu" class="scroll-block">Меню</a>
@@ -99,7 +102,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9 col-md-10 hide-sm">
-                        <nav class="menu menu menu-nojs">
+                        <nav class="menu menu-nojs">
                             <ul class="navbar-nav desktop">
                                 <li class="menu-item menu-item-type-custom">
                                     <button class="menu-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -221,6 +224,7 @@
                     </div>
 						</div>
 
+
 						<div class="form-group radio">
 							<div class="form-title">Тип жилья:</div>
 							<div class="form-items three">
@@ -295,7 +299,11 @@
 
     </section>
 
-    <script src="/js/ion.rangeSlider.min.js"></script>
+
+    <script src="/js/range-slider.js"></script>
+    <script src="/js/mobile.menu.js"></script>
+
+
     <script>
         var navMain = document.querySelector('.menu');
         var navToggle = document.querySelector('.menu-nav__toggle');
@@ -312,6 +320,16 @@
     }
 });
     </script>
+
+<footer>
+
+<form method="post" action="/php/index.php">
+    Артикул: <input type="text" name="article" required>
+    <input type="submit" value="Отправить">
+</form>
+
+</footer>
+
 
     </body>
     </html>
